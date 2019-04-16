@@ -1,31 +1,39 @@
 Transliterator Yii2 Cyrillic
 ============================
-Transliterator Yii2 Cyrillic
+Транслитерация Yii2 Русского текста
 
 Installation
 ------------
 
-The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+Предпочтительным способом установки этого расширения является [composer](http://getcomposer.org/download/).
 
-Either run
+Нужно запустить
 
 ```
 php composer.phar require --prefer-dist alex290/yii2-translit "*"
 ```
 
-or add
+или добавить
 
 ```
 "alex290/yii2-translit": "*"
 ```
 
-to the require section of your `composer.json` file.
+в раздел require вашего `composer.json` файла.
 
 
-Usage
+Использование
 -----
 
-Once the extension is installed, simply use it in your code by  :
+После установки расширения просто используйте его в коде :
 
 ```php
-<?= \alex290\translit\AutoloadExample::widget(); ?>```
+<?= \alex290\translit\Translit::widget((['text' => 'Ваш русский текст', 'sufix' => '.html', 'length' => 50])); ?>```
+
+где
+
+'text' - Ваш русский текст
+
+'sufix' - Суфикс например .html (Необязательный параметр)
+
+'length' - Длина (количество) символов. Если не указывать то по умалчанию 50 

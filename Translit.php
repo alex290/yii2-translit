@@ -1,14 +1,16 @@
 <?php
 
 namespace alex290\translit;
+use yii\helpers\StringHelper;
 
 /**
  * This is just an example.
  */
 class Translit extends \yii\base\Widget {
 
-    public $sufix = null;
-    public $text = null;
+    public $sufix = null; // Суфикс например .html
+    public $text = null; // Русский текст
+    public $length = 50; //Длина (количество) символов. По умалчанию 50
 
     public function run() {
         
@@ -18,9 +20,8 @@ class Translit extends \yii\base\Widget {
         $lat = [
             'A', 'B', 'V', 'G', 'D', 'E', 'E', 'Gh', 'Z', 'I', 'Y', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'F', 'H', 'C', 'Ch', 'Sh', 'Sch', 'Y', 'Y', 'Y', 'E', 'Yu', 'Ya', 'a', 'b', 'v', 'g', 'd', 'e', 'e', 'gh', 'z', 'i', 'y', 'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'f', 'h', 'c', 'ch', 'sh', 'sch', 'y', 'y', 'y', 'e', 'yu', 'ya', "", "-", "", "", "", "", "", "", "", "", "", ""
         ];
-        debug($rus);
-        debug($lat);
-        return str_replace($rus, $lat, $this->text).$this->sufix;
+
+        return StringHelper::truncate(str_replace($rus, $lat, $this->text), $this->length, $this->sufix);
     }
 
 }
