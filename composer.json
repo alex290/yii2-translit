@@ -1,5 +1,5 @@
 {
-    "name": "yii2-translit/yii2-translit",
+    "name": "alex290/yii2-translit",
     "description": "Transliterator Yii2 Cyrillic",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","transliterator"],
