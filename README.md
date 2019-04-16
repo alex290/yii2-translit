@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist yii2-translit/yii2-translit "*"
+php composer.phar require --prefer-dist alex290/yii2-translit "*"
 ```
 
 or add
 
 ```
-"yii2-translit/yii2-translit": "*"
+"alex290/yii2-translit": "*"
 ```
 
 to the require section of your `composer.json` file.
