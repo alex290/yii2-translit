@@ -2,7 +2,7 @@ Transliterator Yii2 Cyrillic
 ============================
 Транслитерация Yii2 Русского текста
 
-Installation
+Установка
 ------------
 
 Предпочтительным способом установки этого расширения является [composer](http://getcomposer.org/download/).
