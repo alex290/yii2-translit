@@ -1,0 +1,21 @@
+{
+    "name": "yii2-translit/yii2-translit",
+    "description": "Transliterator Yii2 Cyrillic",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","transliterator"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "WebGoal",
+            "email": "alexmar12@yandex.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "alex290\\translit\\": ""
+        }
+    }
+}
