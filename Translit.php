@@ -21,7 +21,7 @@ class Translit extends \yii\base\Widget {
             'a', 'b', 'v', 'g', 'd', 'e', 'e', 'gh', 'z', 'i', 'y', 'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'f', 'h', 'c', 'ch', 'sh', 'sch', 'y', 'y', 'y', 'e', 'yu', 'ya', 'a', 'b', 'v', 'g', 'd', 'e', 'e', 'gh', 'z', 'i', 'y', 'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'f', 'h', 'c', 'ch', 'sh', 'sch', 'y', 'y', 'y', 'e', 'yu', 'ya', "", "-", "", "", "", "", "", "", "", "", "", ""
         ];
 
-        return StringHelper::truncate(str_replace($rus, $lat, $this->text), $this->length).$this->sufix;
+        return StringHelper::truncate(str_replace($rus, $lat, $this->text), $this->length, '').$this->sufix;
     }
 
 }
